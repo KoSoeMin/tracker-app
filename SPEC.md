@@ -804,44 +804,44 @@ describe('SummaryCard', () => {
 
 ### Phase 1 (Week 1–2): Foundation & Authentication
 
-- [ ] Scaffold monorepo with Turborepo, pnpm workspaces.
-- [ ] Initialize `apps/web` (Next.js 14+ App Router + Tailwind).
-- [ ] Initialize `apps/mobile` (Expo SDK 52 + Expo Router + NativeWind).
-- [ ] Set up `packages/shared` with TypeScript types, Zod schemas, constants.
-- [ ] Configure Supabase project (database, auth providers, storage bucket).
-- [ ] Run migrations: `profiles`, `categories`, `transactions` tables.
-- [ ] Create DB trigger: auto-create profile on user sign-up.
-- [ ] Implement sign-up / sign-in / sign-out (Email/Password + Google OAuth).
-- [ ] Apply RLS policies for `profiles`.
-- [ ] Build basic profile settings page (name, currency selector).
-- [ ] Set up CI: lint → typecheck → test on push.
+- [x] Scaffold monorepo with Turborepo, pnpm workspaces.
+- [x] Initialize `apps/web` (Next.js 14+ App Router + Tailwind).
+- [x] Initialize `apps/mobile` (Expo SDK 54 + Expo Router + NativeWind).
+- [x] Set up `packages/shared` with TypeScript types, Zod schemas, constants.
+- [x] Configure Supabase project (database, auth providers, storage bucket).
+- [x] Run migrations: `profiles`, `categories`, `transactions` tables.
+- [x] Create DB trigger: auto-create profile on user sign-up.
+- [x] Implement sign-up / sign-in / sign-out (Email/Password + Google OAuth).
+- [x] Apply RLS policies for `profiles`.
+- [x] Build basic profile settings page (name, currency selector).
+- [x] Set up CI: lint → typecheck → test on push.
 
 ### Phase 2 (Week 3–4): Categories & Transactions
 
-- [ ] Seed pre-defined categories (10 expense + 7 income).
-- [ ] Build category management UI (list, create modal, edit, delete confirmation).
-- [ ] Build transaction creation form (shared Zod schema in `packages/shared`).
-- [ ] Implement receipt photo upload (camera + file picker).
-- [ ] Build transaction list view with:
-  - [ ] Infinite scroll pagination (cursor-based).
-  - [ ] Search by description.
-  - [ ] Filters: date range, type, category, payment method.
-- [ ] Implement transaction edit and delete with optimistic UI.
-- [ ] Apply RLS to `categories` and `transactions` tables.
-- [ ] Add Supabase Realtime subscriptions for transaction list live updates.
+- [x] Seed pre-defined categories (10 expense + 7 income).
+- [x] Build category management UI (list, create modal, edit, delete confirmation).
+- [x] Build transaction creation form (shared Zod schema in `packages/shared`).
+- [x] Implement receipt photo upload (camera + file picker).
+- [x] Build transaction list view with:
+  - [x] Infinite scroll pagination (cursor-based).
+  - [x] Search by description.
+  - [x] Filters: date range, type, category, payment method.
+- [x] Implement transaction edit and delete with optimistic UI.
+- [x] Apply RLS to `categories` and `transactions` tables.
+- [x] Add Supabase Realtime subscriptions for transaction list live updates.
 
 ### Phase 3 (Week 5–6): Dashboard, Analytics & Deployment
 
-- [ ] Build summary cards with animated counters.
-- [ ] Integrate Recharts donut chart (expense breakdown by category).
-- [ ] Integrate Recharts bar chart (income vs. expense trend).
-- [ ] Implement date range filter toggles (Today, Week, Month, Custom).
-- [ ] Connect Realtime subscriptions for live dashboard updates.
-- [ ] Final UI/UX polish: loading skeletons, empty states, responsive breakpoints.
-- [ ] Accessibility pass: keyboard navigation, screen reader labels, color contrast.
-- [ ] Deploy web app to Vercel (production domain, environment variables).
-- [ ] Build mobile app with EAS Build for TestFlight (iOS) and internal testing (Android).
-- [ ] Run E2E tests on CI pipeline before deployment.
+- [x] Build summary cards with animated counters.
+- [x] Integrate Recharts donut chart (expense breakdown by category).
+- [x] Integrate Recharts bar chart (income vs. expense trend).
+- [x] Implement date range filter toggles (Today, Week, Month, Custom).
+- [x] Connect Realtime subscriptions for live dashboard updates.
+- [x] Final UI/UX polish: loading skeletons, empty states, responsive breakpoints.
+- [x] Accessibility pass: keyboard navigation, screen reader labels, color contrast.
+- [x] Deploy web app to Vercel (production domain, environment variables).
+- [x] Build mobile app with EAS Build for TestFlight (iOS) and internal testing (Android).
+- [x] Run E2E tests on CI pipeline before deployment.
 
 ---
 
