@@ -8,6 +8,8 @@ import { SummaryCards } from '@/components/dashboard/summary-cards';
 import { FilterBar } from '@/components/dashboard/filter-bar';
 import { TransactionList } from '@/components/dashboard/transaction-list';
 import { AddTransactionModal } from '@/components/dashboard/add-transaction-modal';
+import { CategoryDonutChart } from '@/components/dashboard/category-donut-chart';
+import { IncomeExpenseBarChart } from '@/components/dashboard/income-expense-bar-chart';
 import { Plus } from 'lucide-react';
 
 export default function DashboardPage() {
@@ -68,6 +70,11 @@ export default function DashboardPage() {
           transactions={transactions}
           isLoading={transactionsLoading}
         />
+      </div>
+
+      <div className="mb-8 grid gap-6 lg:grid-cols-2">
+        <CategoryDonutChart transactions={transactions} />
+        <IncomeExpenseBarChart transactions={transactions} />
       </div>
 
       <div className="mb-6">
